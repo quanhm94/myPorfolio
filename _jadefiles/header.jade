@@ -1,0 +1,20 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#music") Music
+    li: a(href="#photography") Photography
+    li: a(href="#webdesign") Web Design
+    li: a(href="#testimonial") Testimonial
+    li: a(href="#note") Note
+    li: a(href="#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-container
+    h1.logo
+    nav.site-left-nav
+      +nav-content()
+    .expander
+    .mobile-nav-toggle: span

@@ -1,0 +1,24 @@
+mixin pic(pic, name, date)
+  a(href="" style="background-image: url(#{pic})").pic-thump
+    .pic-meta
+      .name #{name}
+      .date #{date}
+section.photography
+  .flex-wrap.flex-center
+    .col-50
+      .pic-wrap
+        +pic('/assets/img/pic1.jpg', 'Pic1', '11-10-2016')
+        +pic('/assets/img/pic2.jpg', 'Pic2', '11-10-2016')
+        +pic('/assets/img/pic3.jpg', 'Pic3', '11-10-2016')
+        +pic('/assets/img/pic4.jpg', 'Pic4', '11-10-2016')
+        +pic('/assets/img/pic5.jpg', 'Pic5', '11-10-2016')
+        +pic('/assets/img/pic6.jpg', 'Pic6', '11-10-2016')
+        +pic('/assets/img/pic7.jpg', 'Pic7', '11-10-2016')
+        +pic('/assets/img/pic8.jpg', 'Pic8', '11-10-2016')
+        +pic('/assets/img/pic9.jpg', 'Pic9', '11-10-2016')
+        
+    .col-50.flex.flex-center.order-first
+      .col-1
+        .desc-wrapper
+          h3.home-lead.outdented ...Photography helps people to see...
+          a(href="").home-cta Showcase

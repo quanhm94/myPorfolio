@@ -1,0 +1,83 @@
+section.photography
+  background:
+    image: url(/assets/img/photography-bg-1.jpg)
+    size: cover
+    repeat: no-repeat
+    position: center
+  h3
+    color: white
+  .pic-wrap
+    width: 100%
+    margin: -50px 0
+  .pic-thump
+    display: block
+    background:
+      size: cover
+    width: 33.333%
+    float: left
+    position: relative
+    // animation-name: tada
+    // animation-duration: 1s
+    // animation-fill-mode: both
+    transition: all 200ms ease-in-out
+    border: 3px white solid
+    box-sizing: border-box
+    z-index: 0
+
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+    &:hover
+      transform: scale(1.2)
+
+  .pic-thump.is-hovered
+      z-index: 1000
+
+  .is-3rd-child
+      &:hover
+        transform: translate(-10%,0%) scale(1.2)
+
+  .is-1st-child
+      &:hover
+        transform: translate(10%,0%) scale(1.2)
+
+  .pic-meta
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: fade-out(pink, 0.4)
+
+  .col-1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .home-lead
+      margin-top: 0
+
+  @media(max-width: 640px)
+    .desc-wrapper
+      margin-top: 35px
+
+
+@keyframes tada
+
+  from
+    transform: scale3d(1, 1, 1)
+
+  10%, 20%
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg)
+
+  30%, 50%, 70%, 90%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+
+  40%, 60%, 80%
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+
+  to
+    transform: scale3d(1, 1, 1)

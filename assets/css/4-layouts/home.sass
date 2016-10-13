@@ -1,0 +1,59 @@
+.home-wrapper
+  display: flex
+  min-height: 100vh
+  @media(max-width: 880px)
+    display: block
+
+.home-section
+  flex: 1
+  section
+    padding: 50px 0
+  .flex-wrap
+    display: flex
+    flex-direction: row
+  .flex-center
+    justify-content: center
+  .flex-space-around
+    justify-content: space-around
+
+//colums style
+.col-1
+  margin: 0 10px
+  width: 300px
+  display: flex
+  flex-direction: column
+  justify-content: center
+.order-first
+  order: -1
+.col-2
+  width: 620px
+  margin: 0 10px
+.col-50
+  width: 50%
+  display: flex
+  flex-direction: row
+.push-right
+  margin-left: 330px
+
+//Typography
+.home-lead
+  font-size: 36px
+  line-height: 1.1
+
+  &.outdented
+    text-indent: -0.7em
+
+@media(max-width: 640px)
+  .home-lead
+    text-align: center
+    &.outdented
+      text-indent: 0
+
+@media(max-width: 640px)
+  .home-section .flex-wrap
+    display: block
+  .col-1
+    width: auto
+    text-align: center
+  .col-50
+    width: auto

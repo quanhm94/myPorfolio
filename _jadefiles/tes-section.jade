@@ -1,0 +1,21 @@
+mixin face(pic, words, name)
+  li.face(style="background-image: url(#{pic});")
+    .bubble
+      p #{words}
+      cite - #{name}
+      
+section.tes
+  .flex-wrap.flex-center
+    .col-1
+      ul.faces
+        +face("/assets/img/tes-1.jpg","Curabitur porttitor egestas porttitor. Donec sit amet turpis massa. Phasellus sapien purus, maximus eget ligula in, placerat suscipit magna. Cras dapibus tellus at porttitor auctor. Sed suscipit, est sit amet placerat congue, est enim pulvinar leo, a ultrices sem odio vitae nunc. ","Quan Hoang")
+        +face("/assets/img/tes-2.jpg","Curabitur porttitor egestas porttitor. Donec sit amet turpis massa. Phasellus sapien purus, maximus eget ligula in, placerat suscipit magna. Cras dapibus tellus at porttitor auctor. Sed suscipit, est sit amet placerat congue, est enim pulvinar leo, a ultrices sem odio vitae nunc. ","Hoan Ngo")
+        +face("/assets/img/tes-3.jpg","Curabitur porttitor egestas porttitor. Donec sit amet turpis massa. Phasellus sapien purus, maximus eget ligula in, placerat suscipit magna. Cras dapibus tellus at porttitor auctor. Sed suscipit, est sit amet placerat congue, est enim pulvinar leo, a ultrices sem odio vitae nunc. ","Nam Nguyen")
+        +face("/assets/img/tes-4.jpg","Curabitur porttitor egestas porttitor. Donec sit amet turpis massa. Phasellus sapien purus, maximus eget ligula in, placerat suscipit magna. Cras dapibus tellus at porttitor auctor. Sed suscipit, est sit amet placerat congue, est enim pulvinar leo, a ultrices sem odio vitae nunc. ","Nathan Collins")
+        +face("/assets/img/tes-5.jpg","Curabitur porttitor egestas porttitor. Donec sit amet turpis massa. Phasellus sapien purus, maximus eget ligula in, placerat suscipit magna. Cras dapibus tellus at porttitor auctor. Sed suscipit, est sit amet placerat congue, est enim pulvinar leo, a ultrices sem odio vitae nunc. ","Dat Tran")
+        li.back-button.face
+      
+        
+    .col-1
+      h3.home-lead.outdented ...Let me help you sort it out...
+      a(href="").home-cta Schedule a Call
